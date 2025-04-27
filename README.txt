@@ -1,0 +1,34 @@
+* Lưu ý:
+- Toàn bộ phần này tôi làm trên 2 app chính:
+	- SQL Server Management studio 20
+	- Visual Studio 22
+- Server:
+	- MS SQL Server (Developer) bản mới nhất
+	- Instance Name: CHANGIE\DWSERVER (trong proj trên lap tôi đặt thế)
+
+
+
+* Các folder:
+- SSMS:
+	- N12: Database CSDL tích hợp
+	- N12_DW: Database cho Warehouse
+- Visual Studio:
+	- N12_Inte Proj: Proj để ánh xạ data (Data Flow)
+	- N12_OLAP Proj: Proj để xây các Cube
+- Data: Các file csv --> dữ liệu được sinh để đổ vào kho
+
+
+
+* Các bước thực hiện:
+1. Cài đặt MS SQL Server (Nhớ cài Analysis Services (Multidimesional) lúc setup)
+2. Cài đặt SSMS, chạy và kết nối server
+3. Chạy N12.sql và N12_DW.sql
+4. Kiểm tra data ở folder data được load lên chưa (dùng các câu lệnh truy vấn)
+5. Cài đặt Visual Studio
+6. Cài Toolset: Data storage and processing
+7. Cài các Extension:
+	- Microsoft Analysis Services Projects
+	- SQL Server Integration Services Projects 2022
+8. Mở N12_Inte Proj và chạy
+9. Quay lại check xem bang Fact_Sale và Fact_Inventory có data chưa
+10. Mở N12_OLAP Proj --> màn hình các cube đã xây
