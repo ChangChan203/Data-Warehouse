@@ -29,6 +29,7 @@
 7. Cài các Extension:
 	- Microsoft Analysis Services Projects
 	- SQL Server Integration Services Projects 2022
+	- OLED DB Driver
 8. Mở N12_Inte Proj và chạy
 9. Quay lại check xem bang Fact_Sale và Fact_Inventory có data chưa
 10. Mở N12_OLAP Proj --> màn hình các cube đã xây
